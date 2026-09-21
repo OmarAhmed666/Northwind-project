@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Northwind_ecomm.props" />
+</Project>

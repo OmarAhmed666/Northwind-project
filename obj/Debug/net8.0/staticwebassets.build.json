@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "b5MxjOGol2nhtGGDNbaB/Ofq6XEpJIoUBvUetE5pteQ=",
+  "Source": "Northwind_ecomm",
+  "BasePath": "_content/Northwind_ecomm",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
