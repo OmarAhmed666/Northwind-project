@@ -8,11 +8,11 @@ namespace Northwind_ecomm.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class ProductController : ControllerBase
+	public class ProductsController : ControllerBase
 	{
 		private readonly NorthwindContext _context;
 
-		public ProductController(NorthwindContext context)
+		public ProductsController(NorthwindContext context)
 		{
 			_context = context;
 		}
@@ -30,6 +30,17 @@ namespace Northwind_ecomm.Controllers
 			}
 
 			return Ok(result);
+		}
+
+		[HttpGet("{id}")]
+		public async Task<IActionResult> GetProduct(int id)
+		{
+			var product = await _context.Products.FindAsync(id);
+
+			if (product == null)
+				return NotFound();
+
+			return Ok(ToResponse(product));
 		}
 
 		[HttpPost]
@@ -77,7 +88,8 @@ namespace Northwind_ecomm.Controllers
 			await _context.SaveChangesAsync();
 
 			// 4. Return 201 Created + the address of the GET endpoint
-			return CreatedAtAction(nameof(Product), new { id = product.ProductId }, ToResponse(product));
+			//return CreatedAtAction(nameof(Product), new { id = product.ProductId }, ToResponse(product));
+			return CreatedAtAction(nameof(GetProduct), new { id = product.ProductId }, ToResponse(product));
 		}
 
 		// Copies a Product (database entity) into a ProductResponseDto

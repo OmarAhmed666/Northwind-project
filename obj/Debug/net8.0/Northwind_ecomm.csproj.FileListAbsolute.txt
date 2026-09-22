@@ -134,3 +134,4 @@ D:\IT fusion intern\NorthwindAPI\Northwind_ecomm\Northwind_ecomm\obj\Debug\net8.
 D:\IT fusion intern\NorthwindAPI\Northwind_ecomm\Northwind_ecomm\obj\Debug\net8.0\Northwind_ecomm.pdb
 D:\IT fusion intern\NorthwindAPI\Northwind_ecomm\Northwind_ecomm\obj\Debug\net8.0\Northwind_ecomm.genruntimeconfig.cache
 D:\IT fusion intern\NorthwindAPI\Northwind_ecomm\Northwind_ecomm\obj\Debug\net8.0\ref\Northwind_ecomm.dll
+D:\IT fusion intern\NorthwindAPI\Northwind_ecomm\Northwind_ecomm\obj\Debug\net8.0\Northwind_ecomm.sourcelink.json
